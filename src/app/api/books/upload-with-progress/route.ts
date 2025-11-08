@@ -14,6 +14,15 @@ import { upsertVectors, deleteVectors } from "@/lib/pinecone";
 export const runtime = "nodejs";
 export const maxDuration = 300; // 5 minutes for large files
 
+// Configure body size limit for large file uploads
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '50mb',
+    },
+  },
+};
+
 /**
  * UPLOAD WITH PROGRESS AND ROLLBACK
  * Features:

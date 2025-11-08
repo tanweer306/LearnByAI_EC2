@@ -90,7 +90,7 @@ public/uploads/
 *.backup
 
 # Documentation build artifacts (keep source .md files)
-# *.md
+ *.md
 
 # Test files
 *.test.ts.snap
